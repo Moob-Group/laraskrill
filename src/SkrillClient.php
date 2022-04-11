@@ -1,6 +1,6 @@
 <?php
 
-namespace Obydul\LaraSkrill;
+namespace Moob\LaraSkrill;
 
 class SkrillClient
 {
