@@ -31,17 +31,8 @@ class SkrillClient
      */
     public function generateSID()
     {
-        // send request to skrill
-        $ch = curl_init(self::APP_URL);
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST'); //
-        curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_0); // -0
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $this->request->toArray());
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        $response = curl_exec($ch);
-
-        return $response;
+       // send request to skrill
+       return Http::post(self::APP_URL, $this->request->toArray())->body();
     }
 
     /**
