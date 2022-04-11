@@ -2,6 +2,8 @@
 
 namespace Moob\LaraSkrill;
 
+use Illuminate\Support\Facades\Http;
+
 class SkrillClient
 {
     /** Skrill payment and refund URL */
