@@ -1,5 +1,5 @@
 {
-  "name": "obydul/laraskrill",
+  "name": "moob/laraskrill",
   "description": "LaraSkrill is a laravel plugin for processing payments through Skrill.",
   "type": "library",
   "license": "MIT",
@@ -12,13 +12,13 @@
   "require": {},
   "autoload": {
     "psr-4": {
-      "Obydul\\LaraSkrill\\": "src/"
+      "Moob\\LaraSkrill\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Obydul\\LaraSkrill\\LaraSkrillServiceProvider"
+        "Moob\\LaraSkrill\\LaraSkrillServiceProvider"
       ]
     }
   },
